@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homeword_04</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__logo">
+                <a href="index.html"><img src="./imgs/rst.svg" alt="logo" class="header__logo-img"></a>
+            </div>
+            <div class="header__info">
+                <p class="header__info-main">
+                    Авто базар - Авторинок України.
+                </p>
+                <p class="header__info-special">
+                    Автопродаж на RST це понад 400000 б.в. авто, а також продаж нових автомобілів в Україні.
+                </p>
+            </div>
+            <div class="registration">
+                <div class="login">
+                    <img src="./imgs/log-in.svg" alt="log-in" class="login__image">
+                    <a href="log-in.html">Увійти</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content">
+        <div class="content__banner">
+            <div class="content__banner-information">
+                <h2>Придбати авто в Одесі</h2>
+                <p>Mercedes S63 AMG Coupe Можна придбати за <span class="information-special">130,823$</span></p>
+                <a href="#" class="content__banner-button">Придбати зараз</a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="content__catalog">
+                <div class="content content__search">
+                    <div class="search__type-cars">
+                        <div class="search__block"><a href="#"><img src="https://img.icons8.com/ios/50/sedan.png" alt="sedan"/></a></div>
+                        <div class="search__block"><a href="#"><img src="https://img.icons8.com/ios/50/suv-2.png" alt="suv-2"/></a></div>
+                        <div class="search__block"><a href="#"><img src="https://img.icons8.com/fluency-systems-regular/50/waggon-truck.png" alt="waggon-truck"/></a></div>
+                        <div class="search__block-special"><a href="#"><img src="https://img.icons8.com/ios/50/tractor.png" alt="tractor"/></a></div>
+                    </div>
+                    <div class="search search__characteristic">
+                        <form action="https://fom.in.ua/echo" method="post" target="_blank" class="search-form">
+                            <div class="search__characteristic-main">
+                                <select name="kuzov">
+                                    <option value="sedan">Седан</option>
+                                    <option value="universal">Універсал</option>
+                                    <option value="hetchback4/5">Хетчбэк 4/5 дверей</option>
+                                    <option value="kupe">Купе</option>
+                                    <option value="hetchback2/3">Хетчбек 2/3 двері</option>
+                                    <option value="cabriolet">Кабріолет/Родстер</option>
+                                    <option value="dzhip">Позашляховик</option>
+                                    <option value="miniven">Мінівен</option>
+                                    <option value="microbus">Мікробус пасажир</option>
+                                    <option value="furhon">Фургон пасажир</option>
+                                </select>
+                            </div>
+                            <div class="search__characteristic-additional">
+                                <select name="mark">
+                                    <option value="barkas">Barkas</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="Mercedes">Mercedes</option>
+                                    <option value="Mitsubishi">Mitsubishi</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="Skoda">Skoda</option>
+                                    <option value="Toyota">Toyota</option>
+                                </select>
+                                <select name="Country">
+                                    <option value="German">Німеччина</option>
+                                    <option value="China">Китай</option>
+                                    <option value="USA">США</option>
+                                    <option value="Japan">Японія</option>
+                                    <option value="India">Індія</option>
+                                    <option value="Mexico">Мексика</option>
+                                    <option value="Mexico">Україна</option>
+                                </select>
+                            </div>
+                            <div class="search__characteristic-special">
+                                <label for="Price-from">Ціна від</label>
+                                <input type="number" name="Price from" min="1000" max="50000" step="500" value="1000" id="Price-from"> 
+                                <label for="Price-for">Ціна до</label>
+                                <input type="number" name="Price for" min="1000" max="50000" step="500" value="50000" id="Price-for">
+                            </div>
+                            <div class="search__characteristic-special">
+                                <label for="Year-from">Рік від</label>
+                                <input type="number" name="Year from" min="1980" max="2024" step="1" value="1980" id="Year-from"> 
+                                <label for="Year-for">Рік до</label>
+                                <input type="number" name="Year for" min="1980" max="2024" step="1" value="2024" id="Year-for"> 
+                            </div>
+                            <div class="search__characteristic-extra">
+                                <select name="condition" class="condition">
+                                    <option value="Freshly driven">Свіжепригнані</option>
+                                    <option value="New">Нові—з автосалону</option>
+                                    <option value="BU">БУ—не потребуэ ремонту</option>
+                                    <option value="Need repair">Потребує ремонту</option>
+                                    <option value="Accident">Після ДТП</option>
+                                    <option value="For parts">На запчастини</option>
+                                </select> 
+                                <select name="Type of fuel" class="fuel">
+                                    <option value="Gasoline">Бензин</option>
+                                    <option value="Diesel">Дизель</option>
+                                    <option value="Gas/Gasoline">Газ/Бензин</option>
+                                    <option value="Hybrid">Гібрид</option>
+                                    <option value="Electro">Електро</option>
+                                    <option value="Hydrogen">Водень</option>
+                                </select>
+                            </div>
+                            <div class="search__characteristic-extra">   
+                                <select name="Type of gearbox" class="gearbox">
+                                    <option value="Automaton">Автомат</option>
+                                    <option value="Mechanics">Механіка</option>
+                                    <option value="Variator">Варіатор</option>
+                                    <option value="Hydromechanical">Гідромеханічна</option>
+                                    <option value="Hydrostatic">Гідростатична</option>
+                                    <option value="Gearbox">Редуктор</option>
+                                    <option value="Robotized">Роботизирована</option>
+                                    <option value="Sequential">Секвентальна</option>
+                                </select>
+                                <select name="Type of comfort" class="comfort">
+                                    <option value="Air conditioning">Кондиціонер</option>
+                                    <option value="On-board computer">Бортовий комп'ютер</option>
+                                    <option value="Climate control">Клімат контроль</option>
+                                    <option value="Leather salon">Шкіряний салон</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="search__characteristic">    
+                                <label for="color">Виберіть потрібний колір:</label>
+                                <input type="color" name="color" value="#ff0000" id="color">
+                            </div>
+                            <div class="search__footer">
+                                <input type="submit" value="Пошук" class="search__button">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="content content__product">
+                    <div class="product__car">
+                        <div class="product__car-image">    
+                            <img src="./imgs/car-1.jpg" alt="Volkswagen Passat 2012">
+                        </div>
+                        <div class="product__car-info">
+                            <div class="product__car-main">
+                                <h2>Volkswagen Passat 2012</h2>
+                                <p>B7 - 2.0TDI DSG (140 л.с.) - Highline</p>
+                                <p>Пробіг: 142 тыс. км</p>
+                                <p class="product__car-description">Ця машина просто ексклюзив, для її років!</p>
+                            </div>
+                            <div class="product__car-additional">
+                                <div class="product__car-price">
+                                    <span class="price">$13 800</span>
+                                    <span class="price-uah">572 562 грн</span>
+                                </div>
+                                <p>Паливо: Дизель, 1.97 л</p>
+                                <p>Трансмісія: Автомат</p>
+                                <p>Розташування: Україна</p>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="product__car">
+                        <div class="product__car-image">    
+                            <img src="./imgs/car-2.webp" alt="Porsche 911 2021">
+                        </div>
+                        <div class="product__car-info">
+                            <div class="product__car-main">
+                                <h2>Porsche 911 2021</h2>
+                                <p>992 • Carrera S PDK (450 к.с.)</p>
+                                <p>Пробіг: 23 тис. км</p>
+                                <p class="product__car-description">Вся в плівці. будь ласка дзвоніть на меседжі.</p>
+                            </div>
+                            <div class="product__car-additional">
+                                <div class="product__car-price">
+                                    <span class="price">$169 999</span>
+                                    <span class="price-uah">7 051 559 грн</span>
+                                </div>
+                                <p>Паливо: Бензин, 2.98 л</p>
+                                <p>Трансмісія: Автомат</p>
+                                <p>Розташування: Німеччина</p>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="product__car">
+                        <div class="product__car-image">    
+                            <img src="./imgs/car-3.webp" alt="Mercedes-Benz C-Class 2020">
+                        </div>
+                        <div class="product__car-info">
+                            <div class="product__car-main">
+                                <h2>Mercedes-Benz C-Class 2020</h2>
+                                <p>W205 (FL) • 220d G-Tronic (194 к.с.) 4Matic • Base</p>
+                                <p>Пробіг: 35 тис. км</p>
+                                <p class="product__car-description">Офіційний, не був у ДТП, каско, один власник</p>
+                            </div>
+                            <div class="product__car-additional">
+                                <div class="product__car-price">
+                                    <span class="price">$42 000</span>
+                                    <span class="price-uah">1 742 160 грн</span>
+                                </div>
+                                <p>Паливо: Дизель, 1.95 л.</p>
+                                <p>Трансмісія: Автомат</p>
+                                <p>Розташування: CША</p>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="product__car">
+                        <div class="product__car-image">    
+                            <img src="./imgs/car-4.webp" alt="BMW 5 Series 2016">
+                        </div>
+                        <div class="product__car-info">
+                            <div class="product__car-main">
+                                <h2>BMW 5 Series 2016</h2>
+                                <p>F10 (FL) • 528i Steptronic (245 к.с)</p>
+                                <p>Пробіг: 126 тис. км</p>
+                                <p class="product__car-description">В подарунок – зимня резина Goodyear R17 (купляв восени 2023 року) на ориг. дисках.</p>
+                            </div>
+                            <div class="product__car-additional">
+                                <div class="product__car-price">
+                                    <span class="price">$23 500</span>
+                                    <span class="price-uah">974 780 грн</span>
+                                </div>
+                                <p>Паливо:  Бензин, 2 л</p>
+                                <p>Трансмісія: Автомат</p>
+                                <p>Розташування: Китай</p>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="product__car">
+                        <div class="product__car-image">    
+                            <img src="./imgs/car-5.webp" alt="Audi Q7 2017">
+                        </div>
+                        <div class="product__car-info">
+                            <div class="product__car-main">
+                                <h2>Audi Q7 2017</h2>
+                                <p>Typ 4M • 3.0 TDI Tiptronic (272 к.с.) Quattro • S-Line</p>
+                                <p>Пробіг: 141 тис. км</p>
+                                <p class="product__car-description">Стан як у нового авто!!! офіційний!!!</p>
+                            </div>
+                            <div class="product__car-additional">
+                                <div class="product__car-price">
+                                    <span class="price">$50 999</span>
+                                    <span class="price-uah">2 115 439 грн</span>
+                                </div>
+                                <p>Паливо: Дизель, 2.97 л</p>
+                                <p>Трансмісія: Автомат</p>
+                                <p>Розташування: Індія</p>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="product__car">
+                        <div class="product__car-image">    
+                            <img src="./imgs/car-6.jpg" alt="Audi Q7 2017">
+                        </div>
+                        <div class="product__car-info">
+                            <div class="product__car-main">
+                                <h2>BMW 5 Series 2008</h2>
+                                <p>E61 (FL) • 520i МТ (170 к.с) • Base</p>
+                                <p>Пробіг:  260 тис. км</p>
+                                <p class="product__car-description">Рестйлінгова модель.2.0.бензин(газа не коли не було)</p>
+                            </div>
+                            <div class="product__car-additional">
+                                <div class="product__car-price">
+                                    <span class="price">$8 800</span>
+                                    <span class="price-uah">365 112 грн</span>
+                                </div>
+                                <p>Паливо: Бензин, 2 л.</p>
+                                <p>Трансмісія: Механіка</p>
+                                <p>Розташування: Мексика</p>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="product__car">
+                        <div class="product__car-image">    
+                            <img src="./imgs/car-7.webp" alt="Toyota Tundra 2019">
+                        </div>
+                        <div class="product__car-info">
+                            <div class="product__car-main">
+                                <h2>Toyota Tundra 2019</h2>
+                                <p>II покоління (3rd FL)</p>
+                                <p>Пробіг:  150 тис. км</p>
+                                <p class="product__car-description">Авто в гарному стані, все обслуговувалося вчасно</p>
+                            </div>
+                            <div class="product__car-additional">
+                                <div class="product__car-price">
+                                    <span class="price">$65 000</span>
+                                    <span class="price-uah">2 696 850 грн</span>
+                                </div>
+                                <p>Паливо: Газ пропан-бутан</p>
+                                <p>Трансмісія: Механіка</p>
+                                <p>Розташування: Японія</p>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__section-about">
+                <h2>Про нас</h2>
+                <p>
+                    Ми - професійний онлайн-сервіс з продажу автомобілів. Ми пропонуємо широкий вибір нових і б/в автомобілів для наших клієнтів. Наша місія - зробити процес купівлі машини зручним і прозорим
+                </p>
+            </div>
+            <div class="footer__section-contact">
+                <h2>Контакти</h2>
+                <p>Email: info@rst.com</p>
+                <p>Телефон: +38 (012) 345-6789</p>
+                <p>Адреса: г. Одеса, вул. Примірна, буд. 12</p>
+                <div class="socials">
+                    <a href="#"><img src="./imgs/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./imgs/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="./imgs/telegram.webp" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 Valera Palamarchuk. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

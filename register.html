@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/log-in.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="index.html"><img src="./imgs/rst.svg" alt="" class="header__logo-img"></a>
+                </div>
+                <div class="header__info">
+                    <p class="header__info-main">
+                        Авто базар - Авторинок України.
+                    </p>
+                    <p class="header__info-special">
+                        Автопродаж на RST це понад 400000 б.в. авто, а також продаж нових автомобілів в Україні.
+                    </p>
+                </div>
+                <div class="registration">
+                    <div class="login">
+                        <img src="./imgs/log-in.svg" alt="log-in" class="login__image">
+                        <a href="log-in.html">Увійти</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="login__container">
+                <h2>Зареєструвати акаунт</h2>
+                <form action="https://fom.in.ua/echo" method="post" target="_blank">
+                    <div class="form__group">
+                        <label for="fname">Ім'я:</label>
+                        <input type="text" name="fname" required class="name" id="fname">
+                    </div>
+                    <div class="form__group">
+                        <label for="lname">Прізвище:</label>
+                        <input type="text" name="lname" required class="lname" id="lname">
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required class="email" id="email">
+                    </div>
+                    <div class="form__group">
+                        <label for="password">Пароль:</label>
+                        <input type="password" name="password" required class="password" id="password">
+                    </div>
+                    <div class="form__group">
+                        <label for="rpassword">Повторити пароль:</label>
+                        <input type="password" name="repeat-password" required class="password" id="rpassword">
+                    </div>
+                    <div class="form__group checkbox">
+                        <input type="checkbox" name="remember" class="remember" id="remember">
+                        <label for="remember">Запам'ятати мене</label>
+                    </div>
+                    <button type="submit">Зареєструватися</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer__container">
+                <div class="footer__section-about">
+                    <h2>Про нас</h2>
+                    <p>
+                        Ми - професійний онлайн-сервіс з продажу автомобілів. Ми пропонуємо широкий вибір нових і б/в автомобілів для наших клієнтів. Наша місія - зробити процес купівлі машини зручним і прозорим
+                    </p>
+                </div>
+                <div class="footer__section-contact">
+                    <h2>Контакти</h2>
+                    <p>Email: info@rst.com</p>
+                    <p>Телефон: +38 (012) 345-6789</p>
+                    <p>Адреса: г. Одеса, вул. Примірна, буд. 12</p>
+                    <div class="socials">
+                        <a href="#"><img src="./imgs/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="./imgs/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="./imgs/telegram.webp" alt="Telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Valera Palamarchuk. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
